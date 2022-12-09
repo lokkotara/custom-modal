@@ -1,7 +1,7 @@
 {
   "name": "@lokkotara/custom-modal",
   "author": "Lokkotara",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "private": false,
   "description": "A simple, lightweight, and customizable modal component for React",
   "license": "MIT",

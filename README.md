@@ -64,8 +64,7 @@ const SomeComponent = () => {
 
 ## Examples
 
-![Successful example](https://github.com/lokkotara/custom-modal/blob/2e55c8baddd1957ec88432a4ee44db1d85c26d6d/img/success.png)
-![other example](./img/success.png)
-![error example](./public/Screenshot%202022-12-05%20at%2022-36-07%20HRnet%20Employee%20management%20system.png)
-
-[def]: ./img/success.png
+| Type | Example |
+| :--------------: | :----------------: |
+| Success message | ![Successful example](https://github.com/lokkotara/custom-modal/blob/2e55c8baddd1957ec88432a4ee44db1d85c26d6d/img/success.png) |
+| Error message | ![error example](https://github.com/lokkotara/custom-modal/blob/3250ce2715c84e6e901040698c03f0b9c5cf7504/public/Screenshot%202022-12-05%20at%2022-36-07%20HRnet%20Employee%20management%20system.png) |
