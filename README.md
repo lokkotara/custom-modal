@@ -10,7 +10,7 @@ To install this package, type `npm install @lokkotara/custom-modal`.
 
 First, import the component with `import { Modal } from "@lokkotara/custom-modal";`.
 
-Then, you can use this like this
+Then, you can use it like this :
 
 ```jsx
 import React,{ useState } from "react";
@@ -47,7 +47,7 @@ const SomeComponent = () => {
 
 ## PropTypes
 
-There is a couple of props that we can pass to our component to customise its appearance. Below is an explanation of what we can do.
+There is a couple of props that we can pass to our component to customise its appearance. Below is an explanation of what we can do :
 
 
 
@@ -67,6 +67,8 @@ There is a couple of props that we can pass to our component to customise its ap
 | titleStyle       |     void or  Object        |   no     | `titleStyle={{color: grey, fontSize: 1.5rem}}`       |
 
 ## Examples
+
+Here are a few screenshots of what we can do with customisation :
 
 | Type | Example |
 | :--------------: | :----------------: |
