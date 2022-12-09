@@ -65,4 +65,4 @@ const SomeComponent = () => {
 ## Examples
 
 ![Successful example](./src/assets/Screenshot%202022-12-05%20at%2022-33-47%20HRnet%20Employee%20management%20system.png)
-![error example][./public/Screenshot%202022-12-05%20at%2022-36-07%20HRnet%20Employee%20management%20system.png]
+![error example](./public/Screenshot%202022-12-05%20at%2022-36-07%20HRnet%20Employee%20management%20system.png)
