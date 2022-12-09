@@ -47,6 +47,10 @@ const SomeComponent = () => {
 
 ## PropTypes
 
+There is a couple of props that we can pass to our component to customise its appearance. Below is an explanation of what we can do.
+
+
+
 | Name             |        Type        | Required | Example          |
 | :--------------: | :----------------: | :------: | :--------------: |
 | closeButton      |  void or Boolean   |   no     | Nothing if you want the close button and `closeButton={false}` if you want to remove it |
