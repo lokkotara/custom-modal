@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Important information about this package
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This package is meant to be used for educational purpose. It is not intended to be maintained and could be deleted in the future.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To install this package, type `npm install @lokkotara/custom-modal`.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+First, import the component with `import { Modal } from "@lokkotara/custom-modal";`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Then, you can use this like this
 
-### `npm test`
+```jsx
+import React,{ useState } from "react";
+import { Modal } from "@lokkotara/custom-modal";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const SomeComponent = () => {
 
-### `npm run build`
+  const [isModal, setIsModal] = useState(false);
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  const customModalBody = (
+    <span>An interesting text</span>
+  );
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  return (
+    <div>
+      <Modal
+        closeButton={false}
+        closeButtonStyle={{color: purple}}
+        icon="success"
+        iconStyle={{color: purple}}
+        isOpen={isModal}
+        message={customModalBody}
+        messageStyle={{fontSize: 1.2rem}}
+        modalContainerStyle={{ backgroundColor: "rgba(164, 137, 178, 0.9)" }}
+        modalStyle={{backgroundColor: #f1f2f3, maxWidth: 500px, minHeight: 250px}}
+        onClose={() => setIsModal(false)}
+        title="An awesome title"
+        titleStyle={{color: grey, fontSize: 1.5rem}}
+      />
+    </div>
+  )
+};
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## PropTypes
 
-### `npm run eject`
+| Name             |        Type        | Required | Example          |
+| :--------------: | :----------------: | :------: | :--------------: |
+| closeButton      |  void or Boolean   |   no     | Nothing if you want the close button and `closeButton={false}` if you want to remove it |
+| closeButtonStyle |      void or Object        |   no     | `closeButtonStyle={{color: purple, fontSize: 1.5rem}}` |
+| icon             |      void or String        |   no     | Nothing if you don't want any icon. Else, one of these : `success`, `error`, `info`, `danger` |
+| iconStyle        |      void or Object        |   no     | Icons have a size and their own color by default. However, you can change it by passing an object of properties `iconStyle={{color: purple, fontSize: 1.5rem}}` |
+| isOpen           |      Boolean       |   yes    | isOpen should be linked to a useState with `false` as default value ans set to `true` to open the modal |
+| message          | String/JSX.element |   yes    | `message="My first message"` or an element like `message={<span>My first message in a span</span>}`          |
+| messageStyle     |      void or Object        |   no     | `messageStyle={{fontSize: 1.2rem, color:grey, fontWeight: bold}}` |     |
+| modalStyle       |      void or Object        |   no     | `modalStyle={{backgroundColor: #f1f2f3, maxWidth: 500px, minHeight: 250px}}` |
+| modalContainerStyle       |      void or Object        |   no     | `modalContainerStyle={{backgroundColor: rgba(164, 137, 178, 0.9)}}` |
+| onClose          |      Function      |   yes    | Should set the useState to `false` like this : `onClose={() => setIsModal(false)}` |
+| title            |      void or String        |   no     | `title="An awesome title"`            |
+| titleStyle       |     void or  Object        |   no     | `titleStyle={{color: grey, fontSize: 1.5rem}}`       |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Examples
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Successful example](./src/assets/Screenshot%202022-12-05%20at%2022-33-47%20HRnet%20Employee%20management%20system.png)
+![error example][def]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[def]: ./public/Screenshot%202022-12-05%20at%2022-36-07%20HRnet%20Employee%20management%20system.png
