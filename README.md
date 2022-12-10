@@ -2,6 +2,14 @@
 
 This package is meant to be used for educational purpose. It is not intended to be maintained and could be deleted in the future.
 
+## About this package
+
+It's a simple, lightweight, and customizable modal component for React. It is built using Storybook and fortawesome as dependencies.
+
+-> Storybook allows us to isolate the package from the business logic and context of our application.
+
+-> Fortawesome is a package developed by Font Awesome and provides an easy way to use icons in our component.
+
 ## Installation
 
 To install this package, type `npm install @lokkotara/custom-modal`.
@@ -27,18 +35,18 @@ const SomeComponent = () => {
   return (
     <div>
       <Modal
-        closeButton={false}
-        closeButtonStyle={{color: purple}}
-        icon="success"
-        iconStyle={{color: purple}}
-        isOpen={isModal}
-        message={customModalBody}
-        messageStyle={{fontSize: 1.2rem}}
-        modalContainerStyle={{ backgroundColor: "rgba(164, 137, 178, 0.9)" }}
-        modalStyle={{backgroundColor: #f1f2f3, maxWidth: 500px, minHeight: 250px}}
-        onClose={() => setIsModal(false)}
-        title="An awesome title"
-        titleStyle={{color: grey, fontSize: 1.5rem}}
+        closeButton={false} // Display the close button
+        closeButtonStyle={{color: purple}} // Style for the close button
+        icon="success" // The icon to display
+        iconStyle={{color: purple}} // Style for the icon
+        isOpen={isModal} // Whether the modal is open or closed
+        message={customModalBody} //The content inside the body of the modal
+        messageStyle={{fontSize: 1.2rem}} //Style applied to the message
+        modalContainerStyle={{ backgroundColor: "rgba(164, 137, 178, 0.9)" }} // Style applied to the container behind the modal
+        modalStyle={{backgroundColor: #f1f2f3, maxWidth: 500px, minHeight: 250px}} // Style for the modal window
+        onClose={() => setIsModal(false)} // Called when the modal is closed
+        title="An awesome title" // The title of the modal
+        titleStyle={{color: grey, fontSize: 1.5rem}} // Style applied to the title
       />
     </div>
   )
