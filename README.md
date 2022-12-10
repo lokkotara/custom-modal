@@ -1,6 +1,24 @@
 # Important information about this package
 
+<p>
+  <a href="https://www.npmjs.com/package/@lokkotara/custom-modal" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@lokkotara/custom-modal.svg">
+<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/lokkotara/custom-modal/react?color=green">
+  </a>
+<img alt="GitHub package.json dependency version (dev dep on branch)" src="https://img.shields.io/github/package-json/dependency-version/lokkotara/custom-modal/dev/@storybook/react?color=orange">
+<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/lokkotara/custom-modal/@fortawesome/free-solid-svg-icons?color=yellow">
+  <a href="https://github.com/lokkotara/custom-modal#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/lokkotara/custom-modal/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-no-red.svg" />
+  </a>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lokkotara/custom-modal?color=yellowgreen">
+</p>
+
+
 This package is meant to be used for educational purpose. It is not intended to be maintained and could be deleted in the future.
+
 
 ## About this package
 
@@ -12,11 +30,17 @@ It's a simple, lightweight, and customizable modal component for React. It is bu
 
 ## Installation
 
-To install this package, type `npm install @lokkotara/custom-modal`.
+To install this package, type 
+```sh
+ npm install @lokkotara/custom-modal
+ ```
 
 ## Usage
 
-First, import the component with `import { Modal } from "@lokkotara/custom-modal";`.
+First, import the component with 
+```sh
+import { Modal } from "@lokkotara/custom-modal";
+```
 
 Then, you can use it like this :
 
