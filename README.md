@@ -68,6 +68,7 @@ const SomeComponent = () => {
         messageStyle={{fontSize: 1.2rem}} //Style applied to the message
         modalContainerStyle={{ backgroundColor: "rgba(164, 137, 178, 0.9)" }} // Style applied to the container behind the modal
         modalStyle={{backgroundColor: #f1f2f3, maxWidth: 500px, minHeight: 250px}} // Style for the modal window
+        modalMode={true} // If true, it can't be closed by clicking on the background behind the modal
         onClose={() => setIsModal(false)} // Called when the modal is closed
         title="An awesome title" // The title of the modal
         titleStyle={{color: grey, fontSize: 1.5rem}} // Style applied to the title
@@ -93,7 +94,7 @@ There is a couple of props that we can pass to our component to customise its ap
 | message          | String/JSX.element |   yes    | `message="My first message"` or an element like `message={<span>My first message in a span</span>}`          |
 | messageStyle     |      void or Object        |   no     | `messageStyle={{fontSize: 1.2rem, color:grey, fontWeight: bold}}` |     |
 | modalStyle       |      void or Object        |   no     | `modalStyle={{backgroundColor: #f1f2f3, maxWidth: 500px, minHeight: 250px}}` |
-| modalContainerStyle       |      void or Object        |   no     | `modalContainerStyle={{backgroundColor: rgba(164, 137, 178, 0.9)}}` |
+| modalMode       |      void or Boolean        |   no     | Nothing if you want to close by clicking outside. Else `modalMode={true}` |
 | onClose          |      Function      |   yes    | Should set the useState to `false` like this : `onClose={() => setIsModal(false)}` |
 | title            |      void or String        |   no     | `title="An awesome title"`            |
 | titleStyle       |     void or  Object        |   no     | `titleStyle={{color: grey, fontSize: 1.5rem}}`       |
